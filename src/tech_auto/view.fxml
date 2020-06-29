@@ -83,18 +83,18 @@
                                     <Label text="Bon" GridPane.columnIndex="1" />
                                     <Label text="Mauvais" GridPane.columnIndex="2" />
                                     <Label text="Obligatoire" GridPane.columnIndex="3" />
-                                    <CheckBox fx:id="huile_moteur_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="huile_moteur_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="liquide_frein_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="liquide_frein_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="circuit_refroid_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="circuit_refroid_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="circuit_direction_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                                    <CheckBox fx:id="circuit_direction_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                    <CheckBox fx:id="batterie_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                    <CheckBox fx:id="batterie_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                    <CheckBox fx:id="lavage_glasse_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                                    <CheckBox fx:id="lavage_glasse_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="huile_moteur_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="huile_moteur_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="liquide_frein_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="liquide_frein_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="circuit_refroid_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="circuit_refroid_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="circuit_direction_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="circuit_direction_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="batterie_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="batterie_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="lavage_glasse_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="lavage_glasse_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="6" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="3" />
@@ -140,18 +140,18 @@
                                     <Label text="Bon" GridPane.columnIndex="1" />
                                     <Label text="Mauvais" GridPane.columnIndex="2" />
                                     <Label text="Obligatoire" GridPane.columnIndex="3" />
-                                    <CheckBox fx:id="veilleuses_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="veilleuses_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="feux_position_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="feux_position_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="feux_de_route_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="feux_de_route_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="clignotants_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                                    <CheckBox fx:id="clignotants_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                    <CheckBox fx:id="feux_dettresse_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                    <CheckBox fx:id="feux_dettresse_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                    <CheckBox fx:id="feux_stop_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                                    <CheckBox fx:id="feux_stop_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="veilleuses_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="veilleuses_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="feux_position_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="feux_position_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="feux_de_route_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="feux_de_route_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="clignotants_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="clignotants_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="feux_dettresse_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="feux_dettresse_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="feux_stop_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="feux_stop_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="6" />
                                     <Label text="Non" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="3" />
@@ -162,14 +162,14 @@
                                     <Label text="Eclairages plaque de police" GridPane.rowIndex="8" />
                                     <Label text="Antibrouillard" GridPane.rowIndex="9" />
                                     <Label text="Réglage des phares" GridPane.rowIndex="10" />
-                                    <CheckBox fx:id="feux_recul_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                                    <CheckBox fx:id="feux_recul_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                    <CheckBox fx:id="e_plaque_police_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                                    <CheckBox fx:id="e_plaque_police_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                    <CheckBox fx:id="antibrouillard_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                                    <CheckBox fx:id="antibrouillard_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                    <CheckBox fx:id="reglage_phares_bon" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-                                    <CheckBox fx:id="reglage_phares_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <CheckBox fx:id="feux_recul_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <CheckBox fx:id="feux_recul_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <CheckBox fx:id="e_plaque_police_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <CheckBox fx:id="e_plaque_police_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <CheckBox fx:id="antibrouillard_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <CheckBox fx:id="antibrouillard_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <CheckBox fx:id="reglage_phares_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                    <CheckBox fx:id="reglage_phares_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="10" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="7" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="8" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="9" />
@@ -205,14 +205,14 @@
                                     <Label text="Bon" GridPane.columnIndex="1" />
                                     <Label text="Mauvais" GridPane.columnIndex="2" />
                                     <Label text="Obligatoire" GridPane.columnIndex="3" />
-                                    <CheckBox fx:id="up_AV_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="up_AV_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="up_AR_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="up_AR_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="pression_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="pression_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="pression_rds_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                                    <CheckBox fx:id="pression_rds_bon" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="up_AV_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="up_AV_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="up_AR_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="up_AR_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="pression_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="pression_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="pression_rds_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="pression_rds_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="4" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="3" />
@@ -252,18 +252,18 @@
                                     <Label text="Bon" GridPane.columnIndex="1" />
                                     <Label text="Mauvais" GridPane.columnIndex="2" />
                                     <Label text="Obligatoire" GridPane.columnIndex="3" />
-                                    <CheckBox fx:id="cv_1_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="cv_1_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="cv_2_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="cv_6_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="cv_3_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="cv_3_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="cv_4_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                                    <CheckBox fx:id="cv_4_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                    <CheckBox fx:id="cv_5_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                    <CheckBox fx:id="cv_5_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                    <CheckBox fx:id="cv_6_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                                    <CheckBox fx:id="cv_6_bon" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="cv_1_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="cv_1_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="cv_2_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="cv_6_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="cv_3_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="cv_3_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="cv_4_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="cv_4_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="cv_5_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="cv_5_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="cv_6_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="cv_6_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="6" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="3" />
@@ -310,18 +310,18 @@
                                     <Label text="Bon" GridPane.columnIndex="1" />
                                     <Label text="Mauvais" GridPane.columnIndex="2" />
                                     <Label text="Obligatoire" GridPane.columnIndex="3" />
-                                    <CheckBox fx:id="idb_1_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="idb_1_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <CheckBox fx:id="idb_2_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="idb_2_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                    <CheckBox fx:id="idb_3_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="idb_3_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="idb_1_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                                    <CheckBox fx:id="idb_4_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                    <CheckBox fx:id="idb_5_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                    <CheckBox fx:id="idb_5_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                    <CheckBox fx:id="idb_6_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                                    <CheckBox fx:id="idb_6_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="idb_1_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="idb_1_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="idb_2_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="idb_2_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="idb_3_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="idb_3_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="idb_1_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="idb_4_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="idb_5_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="idb_5_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="idb_6_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="idb_6_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="6" />
                                     <Label fx:id="idb_1" text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                                     <Label fx:id="idb_2" text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                                     <Label fx:id="idb_3" text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="3" />
@@ -333,16 +333,16 @@
                                     <Label text="Fixation et blocages de ceintures de sécurité" GridPane.rowIndex="9" />
                                     <Label text="Fixation des sièges et dossiers" GridPane.rowIndex="10" />
                                     <Label text="Etat de rétroviseurs" GridPane.rowIndex="11" />
-                                    <CheckBox fx:id="idb_7_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                                    <CheckBox fx:id="idb_8_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                                    <CheckBox fx:id="idb_7_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                    <CheckBox fx:id="idb_8_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                    <CheckBox fx:id="idb_9_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                                    <CheckBox fx:id="idb_9_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                    <CheckBox fx:id="idb_10_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-                                    <CheckBox fx:id="idb_10_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-                                    <CheckBox fx:id="idb_11_bon" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-                                    <CheckBox fx:id="idb_11_mauvais" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                                    <CheckBox fx:id="idb_7_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <CheckBox fx:id="idb_8_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <CheckBox fx:id="idb_7_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <CheckBox fx:id="idb_8_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <CheckBox fx:id="idb_9_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <CheckBox fx:id="idb_9_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <CheckBox fx:id="idb_10_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                    <CheckBox fx:id="idb_10_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <CheckBox fx:id="idb_11_bon" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                    <CheckBox fx:id="idb_11_mauvais" mnemonicParsing="false" onAction="#checkform" GridPane.columnIndex="2" GridPane.rowIndex="11" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="7" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="8" />
                                     <Label text="Oui" GridPane.columnIndex="3" GridPane.rowIndex="9" />
