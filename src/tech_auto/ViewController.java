@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
@@ -35,6 +36,154 @@ public class ViewController implements Initializable {
     private GridPane control_visuel;
     @FXML
     private GridPane instruments_de_bord;
+    @FXML
+    private CheckBox huile_moteur_bon;
+    @FXML
+    private CheckBox huile_moteur_mauvais;
+    @FXML
+    private CheckBox liquide_frein_bon;
+    @FXML
+    private CheckBox liquide_frein_mauvais;
+    @FXML
+    private CheckBox circuit_refroid_bon;
+    @FXML
+    private CheckBox circuit_refroid_mauvais;
+    @FXML
+    private CheckBox circuit_direction_bon;
+    @FXML
+    private CheckBox circuit_direction_mauvais;
+    @FXML
+    private CheckBox batterie_bon;
+    @FXML
+    private CheckBox batterie_mauvais;
+    @FXML
+    private CheckBox lavage_glasse_bon;
+    @FXML
+    private CheckBox lavage_glasse_mauvais;
+    @FXML
+    private CheckBox veilleuses_bon;
+    @FXML
+    private CheckBox veilleuses_mauvais;
+    @FXML
+    private CheckBox feux_position_bon;
+    @FXML
+    private CheckBox feux_position_mauvais;
+    @FXML
+    private CheckBox feux_de_route_bon;
+    @FXML
+    private CheckBox feux_de_route_mauvais;
+    @FXML
+    private CheckBox clignotants_bon;
+    @FXML
+    private CheckBox clignotants_mauvais;
+    @FXML
+    private CheckBox feux_dettresse_bon;
+    @FXML
+    private CheckBox feux_dettresse_mauvais;
+    @FXML
+    private CheckBox feux_stop_bon;
+    @FXML
+    private CheckBox feux_stop_mauvais;
+    @FXML
+    private CheckBox feux_recul_bon;
+    @FXML
+    private CheckBox feux_recul_mauvais;
+    @FXML
+    private CheckBox e_plaque_police_bon;
+    @FXML
+    private CheckBox e_plaque_police_mauvais;
+    @FXML
+    private CheckBox antibrouillard_bon;
+    @FXML
+    private CheckBox antibrouillard_mauvais;
+    @FXML
+    private CheckBox reglage_phares_bon;
+    @FXML
+    private CheckBox up_AV_bon;
+    @FXML
+    private CheckBox up_AV_mauvais;
+    @FXML
+    private CheckBox up_AR_bon;
+    @FXML
+    private CheckBox up_AR_mauvais;
+    @FXML
+    private CheckBox pression_bon;
+    @FXML
+    private CheckBox pression_mauvais;
+    @FXML
+    private CheckBox pression_rds_bon;
+    @FXML
+    private CheckBox cv_1_bon;
+    @FXML
+    private CheckBox cv_1_mauvais;
+    @FXML
+    private CheckBox cv_2_bon;
+    @FXML
+    private CheckBox cv_6_mauvais;
+    @FXML
+    private CheckBox cv_3_bon;
+    @FXML
+    private CheckBox cv_3_mauvais;
+    @FXML
+    private CheckBox cv_4_bon;
+    @FXML
+    private CheckBox cv_4_mauvais;
+    @FXML
+    private CheckBox cv_5_bon;
+    @FXML
+    private CheckBox cv_5_mauvais;
+    @FXML
+    private CheckBox cv_6_bon;
+    @FXML
+    private CheckBox idb_1_bon;
+    @FXML
+    private CheckBox idb_1_mauvais;
+    @FXML
+    private CheckBox idb_2_bon;
+    @FXML
+    private CheckBox idb_2_mauvais;
+    @FXML
+    private CheckBox idb_3_bon;
+    @FXML
+    private CheckBox idb_3_mauvais;
+    @FXML
+    private CheckBox idb_4_mauvais;
+    @FXML
+    private CheckBox idb_5_bon;
+    @FXML
+    private CheckBox idb_5_mauvais;
+    @FXML
+    private CheckBox idb_6_bon;
+    @FXML
+    private CheckBox idb_6_mauvais;
+    @FXML
+    private Label idb_1;
+    @FXML
+    private Label idb_2;
+    @FXML
+    private Label idb_3;
+    @FXML
+    private CheckBox idb_7_bon;
+    @FXML
+    private CheckBox idb_8_bon;
+    @FXML
+    private CheckBox idb_7_mauvais;
+    @FXML
+    private CheckBox idb_8_mauvais;
+    @FXML
+    private CheckBox idb_9_bon;
+    @FXML
+    private CheckBox idb_9_mauvais;
+    @FXML
+    private CheckBox idb_10_mauvais;
+    @FXML
+    private CheckBox idb_10_bon;
+    @FXML
+    private CheckBox idb_11_bon;
+    @FXML
+    private CheckBox idb_11_mauvais;
+    @FXML
+    private Button okButton;
 
     /**
      * Initializes the controller class.
@@ -237,4 +386,22 @@ public class ViewController implements Initializable {
         }
         alert.showAndWait();
     }   
+
+    @FXML
+    private void closeApp(ActionEvent event) {
+        System.exit(0);
+    }
+
+    @FXML
+    private void about(ActionEvent event) {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Info application");
+        alert.setHeaderText("Cette application permet de savoir si un vehicule sera admi en vistie technique ou pas.");
+        alert.setContentText(
+                "* Si 75% des pieces sont mauvais etat :\n"
+              + "  - Si au moins une piece obligatoire fait partir de ces 75% : la decision revient au chef exclusivement. \n"
+              + "  - Sinon vous etes admis en visite technique. \n"
+              + "* Dans le cas contraire vous n'etes pas admis en visite technique. \n");
+        alert.showAndWait();
+    }
 }
