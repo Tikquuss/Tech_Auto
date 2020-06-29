@@ -399,8 +399,8 @@ public class ViewController implements Initializable {
         alert.setHeaderText("Cette application permet de savoir si un vehicule sera admi en vistie technique ou pas.");
         alert.setContentText(
                 "* Si 75% des pieces sont mauvais etat :\n"
-              + "  - Si au moins une piece obligatoire fait partir de ces 75% : la decision revient au chef exclusivement. \n"
-              + "  - Sinon vous etes admis en visite technique. \n"
+              + "   - Si au moins une piece obligatoire fait partir de ces 75% : la decision revient au chef exclusivement. \n"
+              + "   - Sinon vous etes admis en visite technique. \n"
               + "* Dans le cas contraire vous n'etes pas admis en visite technique. \n");
         alert.showAndWait();
     }
